@@ -3,6 +3,7 @@ import { Box, Button, Grid, Typography } from '@mui/material';
 import { initialData } from '../../database/products';
 import { ShopLayout } from '../../components/layouts';
 import { ProductSlideshow } from '../../components/products/ProductSlideshow';
+import { ItemCounter } from '../../components/ui';
 
 const product = initialData.products[0]
 
@@ -21,6 +22,7 @@ const ProductPage = () => {
 
             <Box sx={{ my: 2 }}>
               <Typography variant='subtitle2'>Cantidad</Typography>
+              <ItemCounter />
             </Box>
 
             <Button color='secondary' className='circular-btn'>
